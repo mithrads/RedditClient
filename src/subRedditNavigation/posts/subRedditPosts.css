@@ -1,0 +1,69 @@
+.postItem {
+  transition: all .3s ease-out;
+  overflow: scroll;
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  position: absolute;
+  left: 260px;
+  right: 0;
+  -webkit-overflow-scrolling: touch;
+  text-align: center;
+}
+
+.title, .postSelected {
+  padding: 15px;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+  color: #88292F;
+}
+
+.title:hover {
+  color: #FF570A;
+}
+
+.card {
+  margin: auto;
+  width: 70%;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  transition: 0.4s;
+}
+
+.description {
+  color: #846A6A;
+  line-height: 1.5em;
+  max-height: 4.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.author {
+  color: #CA895F;
+}
+
+.card .cardImage {
+  padding: 15px;
+}
+
+.cardTitle {
+  color: #88292F;
+}
+
+.card a {
+  color: red;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  color: #A15E49;
+}
+
+th , td {
+  width: 50%;
+}
