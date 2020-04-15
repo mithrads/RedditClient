@@ -2,10 +2,6 @@ import "./subRedditPosts.css";
 import React from "react";
 import SubRedditPostItem from "./subRedditPostItem";
 
-const initialState = {
-  id: null,
-};
-
 export default class SubRedditPosts extends React.Component {
   constructor(props) {
     super(props);
