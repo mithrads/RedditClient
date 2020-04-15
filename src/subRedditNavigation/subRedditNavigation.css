@@ -3,18 +3,19 @@
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
     position: absolute;
-    top: 10px;
+    top: 0;
     bottom: 0;
-    width: 260px;
-    background-color: #534B52;
     left: 0;
-    color: white;
+    width: 260px;
+    background-color: var(--text-theme);
+    color: var(--text-secondary);
     -webkit-overflow-scrolling: touch;
     text-transform: capitalize;
+    font-weight: bold;
   }
 
   ul {
-    margin: 0px;
+    margin: 5px;
     padding: 0px;
   }
 
@@ -22,14 +23,15 @@
     padding-top: 15px;
     padding-left: 10px;
     padding-bottom: 15px;
+    color: var(--text-default);
   }
 
   .navigation li:hover:not(.selected) {
-    background-color: #E0DDCF;
-    color: black;
+    background-color: var(--text-hover);
+    color: var(--text-secondary);
   }
 
   .navigation .selected {
     background-color: #2D232E;
-    font-weight: bolder;
+    color: var(--text-default);
   }
