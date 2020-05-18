@@ -1,7 +1,6 @@
-.postItem {
+#postItem {
   transition: all .3s ease-out;
   overflow: scroll;
-  position: absolute;
   top: 0;
   bottom: 0;
   position: absolute;
@@ -10,6 +9,24 @@
   -webkit-overflow-scrolling: touch;
   text-align: center;
   margin-left: 10px;
+}
+
+input{
+  width: 500px;
+  height: 30px;
+  margin: auto;
+}
+
+.scrollButton {
+  position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:rgb(75, 29, 29);
+	color:#FFF;
+	border-radius:50px;
+	box-shadow: 2px 2px 3px #999;
 }
 
 .post, .selectedPost {

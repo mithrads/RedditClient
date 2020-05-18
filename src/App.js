@@ -36,6 +36,7 @@ let postsCallbackName = null;
 
 export default function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
+  
   useEffect(() => {
     const documentHead = document.head;
     if (documentHead == null)
@@ -84,6 +85,12 @@ export default function App() {
     });
   };
 
+  const scrollToTop = (e) => {
+    if(e){
+      document.getElementById("postItem").scrollTop=0;
+    }
+  }
+
   return (
     <React.Fragment>
       <SubRedditNavigation
@@ -95,7 +102,7 @@ export default function App() {
         items={state.navigationItems}
         itemSelected={setSelectedItem}
       />
-      <SubRedditPosts items={state.postItems} />
+      <SubRedditPosts id="posts" items={state.postItems} scrollToTop={(e) => scrollToTop(e)}/>
     </React.Fragment>
   );
 }

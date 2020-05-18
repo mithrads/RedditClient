@@ -1,19 +1,30 @@
-  .navigation {
+.navigation {
     transition: all .3s ease-out;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
     position: absolute;
-    top: 0;
+    top: 40px;
     bottom: 0;
+    color: var(--text-secondary);
+  }
+
+  .navBar{
     left: 0;
     width: 260px;
     background-color: var(--text-theme);
-    color: var(--text-secondary);
-    -webkit-overflow-scrolling: touch;
     text-transform: capitalize;
     font-weight: bold;
   }
 
+  .navigationHeader{
+    top: 0;
+    margin: 2px;
+    position: absolute;
+    height: 30px;
+    color: white;
+    text-align: center !important;
+  }
+  
   ul {
     margin: 0;
     padding: 0;
